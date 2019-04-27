@@ -35,7 +35,7 @@
     "lint": "eslint src/**/*.js",
     "format": "prettier --write \"src/**/*.{js,jsx,json}\""
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "http://35.197.159.102:5000",
   "browserslist": [
     ">0.2%",
     "not dead",
