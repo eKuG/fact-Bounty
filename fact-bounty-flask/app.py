@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from flask import render_template
 import coverage
 
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
@@ -24,3 +25,7 @@ def make_shell_context():
 def deploy():
     # migrate database to latest revision
     upgrade()
+
+@app.route('/')
+def hello_world():
+	return render_template('index.html')
